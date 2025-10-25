@@ -2,11 +2,7 @@
 
 Display the host machine's CPU load on an analog ammeter (85C1-mA panel meter). The project also drives 4 WS2812 LEDs for a visual color indication. The host script sends CPU usage over USB serial to a Raspberry Pi Pico, and the Pico firmware converts the incoming values to a PWM output for the analog meter and colors for the LEDs.
 
-<div style="display: flex; justify-content: center; gap: 10px;">
-  <img src="docs/images/image_low_load.jpg" alt="Low CPU Load" style="height:220px; width:auto;">
-  <img src="docs/images/image_medium_load.jpg" alt="Medium CPU Load" style="height:220px; width:auto;">
-  <img src="docs/images/image_full_load.jpg" alt="Full CPU Load" style="height:220px; width:auto;">
-</div>
+<img src="docs/images/image_low_load.jpg" alt="Low CPU Load" width="32%"> <img src="docs/images/image_medium_load.jpg" alt="Medium CPU Load" width="32%"> <img src="docs/images/image_full_load.jpg" alt="Full CPU Load" width="32%">
 
 ## This repository contains:
 
