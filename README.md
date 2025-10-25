@@ -1,4 +1,5 @@
 # CPU Load to Raspberry Pi Pico
+[![Raspberry Pi Pico](https://img.shields.io/badge/Raspberry%20Pi%20Pico-Supported-green?logo=raspberrypi)](https://www.raspberrypi.com/products/raspberry-pi-pico/) [![PlatformIO Library](https://img.shields.io/badge/PlatformIO-Ready-orange?logo=platformio)](https://platformio.org) [![License: GPL v3](https://img.shields.io/badge/license-GPL--3.0-blue.svg)](https://www.gnu.org/licenses/gpl-3.0) 
 
 Display the host machine's CPU load on an analog ammeter (85C1-mA panel meter). The project also drives 4 WS2812 LEDs for a visual color indication. The host script sends CPU usage over USB serial to a Raspberry Pi Pico, and the Pico firmware converts the incoming values to a PWM output for the analog meter and colors for the LEDs.
 
