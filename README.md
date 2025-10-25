@@ -30,7 +30,7 @@ Wiring notes for the analog meter and WS2812 LEDs
 	- Data pin: `LED_STRIP_DATA_PIN` (see `include/configs.h` — default: 27).
 	- Power: WS2812s typically require 5 V. Power the strip from VBUS pin on Pico and connect the strip ground to the Pico ground.
 
-Pin mappings (from `include/configs.h`)
+## Pin mappings (from `include/configs.h`)
 
 - `BAUDRATE` — 9600 (serial communication speed between host and Pico)
 - `ANALOG_OUTPUT_PIN` — 26 (PWM mapped output used to drive analog meter)
