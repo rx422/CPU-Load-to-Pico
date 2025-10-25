@@ -1,0 +1,37 @@
+#ifndef CONFIG_H
+#define CONFIG_H
+
+#define BAUDRATE						9600
+
+#define ANALOG_OUTPUT_PIN				26
+#define LED_FLASH_PIN					LED_BUILTIN
+#define LED_STRIP_DATA_PIN				27
+#define BRIGHTNESS_BUTTON_PIN			4
+
+#define LED_FLASH_INTERVAL				10
+
+#define GET_NEW_DATA_INTERVAL			1000.0
+
+#define MAX_INPUT_LEVEL					100
+#define MIN_INPUT_LEVEL					0
+
+#define MAX_PWM_LEVEL					255
+#define MIN_PWM_LEVEL					0
+
+#define MAX_BRIGHTNESS					255
+#define MIN_BRIGHTNESS					0
+
+#define INITIAL_HUE_VALUE				0
+#define INITIAL_BRIGHTNESS				153
+#define SATURATION_VALUE				255
+#define MAX_HUE_VALUE					96
+
+#define RGB_LEDS_NUMBER					4
+
+#define BRIGHTNESS_STEP					51
+#define CHANGE_BRIGHTNESS_DELAY			500
+#define CHANGE_BRIGHTNESS_SMOOTH_DELAY	20
+
+#define WATCH_DOG_TIMEOUT				1500
+
+#endif // CONFIG_H

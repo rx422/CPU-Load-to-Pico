@@ -1,0 +1,1 @@
+pyinstaller --onefile --windowed --icon=cpu.ico ".\CPU Load to Pico.py"
