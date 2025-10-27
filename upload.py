@@ -2,7 +2,7 @@ import shutil
 import os
 
 # Define source and destination paths
-source = r"C:\Users\BirnazAdrian\Documents\PlatformIO\Projects\rsp_pi_pico\.pio\build\pico\firmware.uf2"
+source = r".pio\build\pico\firmware.uf2"
 destination = r"E:\firmware.uf2"
 
 # Check if source file exists
