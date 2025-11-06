@@ -51,7 +51,10 @@ void loop()
 		outputLevel = map(inputLevel, MIN_INPUT_LEVEL, MAX_INPUT_LEVEL, MIN_PWM_LEVEL, MAX_PWM_LEVEL);
 
 		deltaOutputLevel = abs(outputLevel - previousOutputLevel);
-		updateReccurence = int(GET_NEW_DATA_INTERVAL / deltaOutputLevel);
+		deltaOutputLevel = deltaOutputLevel ? deltaOutputLevel : 1;
+		updateReccurence = uint16_t(GET_NEW_DATA_INTERVAL / deltaOutputLevel);
+		
+		nextUpdateTime = 0;
 		
 		digitalWrite(LED_FLASH_PIN, HIGH);
 		ledOffTime = millis() + LED_FLASH_INTERVAL;
