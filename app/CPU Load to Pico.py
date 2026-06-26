@@ -24,14 +24,14 @@ while True:
         time.sleep(2)
         continue
     try:
-        with serial.Serial(port, baudrate, timeout=1) as ser:
+        with serial.Serial(port, baudrate, timeout=1, write_timeout=2) as ser:
             print(f"{time.strftime('%H:%M:%S')} Connected to {port} at {baudrate} baud.")
             while True:
                 cpu_load = int(psutil.cpu_percent(interval=1))
                 message = f"{cpu_load}\n"
                 ser.write(message.encode())
                 print(f"{time.strftime('%H:%M:%S')} Sent CPU load: {message[:-1]}%")
-    except SerialException:
+    except (SerialException, OSError):
         print(f"{time.strftime('%H:%M:%S')} Unable to connect to {port}. Retrying...")
         time.sleep(2)
     except KeyboardInterrupt:
